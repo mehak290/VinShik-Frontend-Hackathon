@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VinShik Dashboard</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo"><span class="vin">Vin</span><span class="shik">Shik</span></div>
+      <nav class="menu">
+        <a class="item active" href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a class="item" href="#"><i class="fa-regular fa-calendar"></i><span>Calendar</span></a>
+        <a class="item" href="#"><i class="fa-solid fa-map-location-dot"></i><span>Map</span></a>
+        <a class="item" href="#"><i class="fa-regular fa-user"></i><span>Clients</span></a>
+        <a class="item" href="#"><i class="fa-solid fa-briefcase"></i><span>Jobs</span></a>
+        <a class="item" href="#"><i class="fa-regular fa-file-lines"></i><span>Quotes</span></a>
+        <a class="item" href="#"><i class="fa-solid fa-clipboard-list"></i><span>My Services</span></a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <div class="dots"></div>
+        <div class="actions">
+          <button class="icon" aria-label="Messages"><i class="fa-regular fa-envelope"></i></button>
+          <button class="icon" aria-label="Settings"><i class="fa-solid fa-gear"></i></button>
+          <img class="avatar" src="C:\Users\DELL\Pictures\a1992e889a5031c397ec01c174d1a2dfe00d87ac.jpg" alt="User" />
+        </div>
+      </header>
+
+      <section class="greet">
+        <h1>Welcome back, Julie <span class="wave">👋</span></h1>
+        <p>Here’s what you need to focus on today</p>
+      </section>
+
+      <!-- KPI Cards -->
+      <section class="cards">
+        <article class="card blue">
+          <header>
+            <div class="title">Active Jobs</div>
+            <div class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +12.2%</div>
+          </header>
+          <div class="meta">
+            <div class="value">43.7k</div>
+            <canvas id="chartBlue"></canvas>
+          </div>
+        </article>
+
+        <article class="card orange">
+          <header>
+            <div class="title">Jobs In Progress</div>
+            <div class="trend down"><i class="fa-solid fa-arrow-trend-down"></i> -3.11%</div>
+          </header>
+          <div class="meta">
+            <div class="value">92.3k</div>
+            <canvas id="chartOrange"></canvas>
+          </div>
+        </article>
+
+        <article class="card green">
+          <header>
+            <div class="title">Finished Jobs</div>
+            <div class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +3.3%</div>
+          </header>
+          <div class="meta">
+            <div class="value">66.3k</div>
+            <canvas id="chartGreen"></canvas>
+          </div>
+        </article>
+
+        <article class="card purple">
+          <header>
+            <div class="title">New Leads</div>
+            <div class="trend up"><i class="fa-solid fa-arrow-trend-up"></i> +3.11%</div>
+          </header>
+          <div class="meta">
+            <div class="value">92.3k</div>
+            <canvas id="chartPurple"></canvas>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
