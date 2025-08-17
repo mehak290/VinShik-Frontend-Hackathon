@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+h1{
+    width: 230px;
+    height:55px;
+    font-size:40px;
+}
+/* Sidebar */
+.sidebar {
+  width: 270px;
+  height:731px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.logo-highlight {
+  color: #0da7ff;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background: #e6f3ff;
+  color: #0da7ff;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px 30px;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.top-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Cards */
+.cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card .number {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.trend {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.trend.up { color: green; }
+.trend.down { color: red; }
+
+.blue { border-left: 5px solid #3b82f6; }
+.orange { border-left: 5px solid #f97316; }
+.green { border-left: 5px solid #22c55e; }
+.purple { border-left: 5px solid #a855f7; }
+#head{
+    display: flex;
+
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+
+    width: 1403;
+height: 735;
+border-radius: 20px;
+border-width: 11px;
+angle: 0 deg;
+opacity: 1;
+width: 1169.9;
+height: 81.01;
+top: 2px;
+left: 231.09px;
+border-bottom-width: 0.81px;
+padding:10px;
+}
